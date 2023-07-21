@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "PT Sans Caption", sans-serif;
+}
+
+main {
+	min-height: 100vh;
+	background-color: #f7ecde;
+}
+
+::selection {
+	background-color: #fec260;
+	color: #352e28;
+}
+
+/* logo */
+main h1 {
+	font-size: 50px;
+	font-family: "Pacifico", cursive;
+	color: #352e28;
+	isolation: isolate;
+}
+
+main h1::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	left: 0;
+	bottom: 10px;
+	background-color: #fec260;
+	transition: all 0.5s;
+	z-index: -1;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+main h1:hover::before {
+	height: 50%;
+}
+
+/* bookmark input section */
+
+.bookmark-body {
+	border-width: 2px 0 2px 0;
+	border-style: dotted;
+	border-color: #352e28;
+}
+
+.bookmark-body h2 {
+	font-family: "Righteous", cursive;
+	font-size: 25px;
+	background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.form-control:focus {
+	color: #212529;
+	background-color: #fff;
+	border-color: #d99c39;
+	outline: 0;
+	box-shadow: 0 0 0 0.25rem #fec26055 !important;
+}
+
+.btn-submit {
+	color: #fff !important;
+	background-color: #d1512d !important;
+	border-color: #d1512d !important;
+}
+
+.btn-submit:hover {
+	color: #fff !important;
+	background-color: #bb4120 !important;
+	border-color: #a03315 !important;
+}
+
+/* table form */
+
+.btn-visit {
+	color: #fff !important;
+	background-color: #9eb23b !important;
+	border-color: #9eb23b !important;
+	transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+}
+
+.btn-visit:hover {
+	color: #fff !important;
+	background-color: #8a9e23 !important;
+	border-color: #6e8018 !important;
+}
+
+.btn-delete {
+	color: #fff !important;
+	background-color: #eb1d36 !important;
+	border-color: #eb1d36 !important;
+
+}
+
+.btn-delete:hover {
+	color: #fff !important;
+	background-color: #d30820;
+	border-color: #ba081d;
+}
+
+
+
+table {
+	vertical-align: middle !important;
+	display: table;
+	text-indent: initial;
+	border-spacing: 2px;
+}
+
+th {
+	/* display: table-cell; */
+	font-weight: bold;
+}
+
+/* pop message for input instructions */
+
+.box-info {
+	background-color: #0007;
+}
+
+.box-content {
+	width: 40%;
+	/* height: 25%; */
+	z-index: 10;
+}
+
+.box-content p {
+	font-family: "Bree Serif", serif;
+	font-size: 25px;
+	line-height: 1.5;
+	color: #25221f;
+}
+
+.rules li {
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.rules i {
+	color: #c93a13;
+}
+
+.circles-top span {
+	display: block;
+	width: 30px;
+	height: 30px;
+}
+
+.circles-top span:nth-child(1) {
+	background-color: #f15f5d;
+}
+
+.circles-top span:nth-child(2) {
+	background-color: #febe2e;
+}
+
+.circles-top span:nth-child(3) {
+	background-color: #4db748;
+}
